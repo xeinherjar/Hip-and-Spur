@@ -3,23 +3,43 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Header
-
 .header-container{
-  background-color: hsla(24, 73%, 25%, 1);
-  height: 160px;
+  background-color: hsla(185, 68%, 43%, 0.9);
+  height: 190px;
   margin: 0 auto;
+
 }
 
 header {
   margin-top: 0px;
+
 }
+
 .header-logo h1 {
-  font-size: 100px;
+  font-size: 140px;
   margin-top: 0px;
+  padding-top: 30px;
+  margin-bottom: 0px;
   color: white;
   text-align: center;
- font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: -3px;
 }
+
+.and {
+  color: yellow;
+}
+.header-tagline h2 {
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  overflow: none;
+  margin-top: -160px;
+  padding-top: 136px;
+  padding-bottom: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 // Container 
 
 .outer-container{
