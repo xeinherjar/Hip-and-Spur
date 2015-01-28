@@ -5,17 +5,21 @@
 // Header
 
 .header-container{
-  background-color: lightgray;
-  height: 50px;
+  background-color: hsla(24, 73%, 25%, 1);
+  height: 160px;
   margin: 0 auto;
 }
 
-header{
-  height: 50px;
-  background-color: gray;
-
+header {
+  margin-top: 0px;
 }
-
+.header-logo h1 {
+  font-size: 100px;
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+ font-family: 'Raleway', sans-serif;
+}
 // Container 
 
 .outer-container{
