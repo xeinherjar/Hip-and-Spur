@@ -1,3 +1,16 @@
-## Yo, I'm a Readme
+# HIP & SPUR
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+
+## STEPS TO BUILD
+- Clone Repo
+- `npm install`
+- `bower install`
+
+
+
+## TOOLS
+- Neat
+- Lodash
+- jQuery
+
+
