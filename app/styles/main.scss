@@ -2,25 +2,69 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+// Header
+
+.header-container{
+  background-color: lightgray;
+  height: 50px;
+  margin: 0 auto;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+header{
+  height: 50px;
+  background-color: gray;
+
+}
+
+// Container 
+
+.outer-container{
+  @include outer-container;
+  width: 980px;
+  background-color: green;
+
+}
+
+.news{
+  @include span-columns(6);
+  height: 100px;
+  background-color: blue;
+
+}
+
+.daily-special{
+  @include span-columns(6);
+  @include omega();
+  height: 100px;
+  background-color: orange;
+
+}
+
+.header-slideshow{
+  @include span-columns(12);
+  @include omega();
+  height: 400px;
+  background-color: yellow;
+
+}
+
+main{
+  @include span-columns(9);
+  height: 700px;
+  background-color: blue;
+}
+
+aside{
+  @include span-columns(3);
+  @include omega();
+  height: 400px;
+  background-color: orange;
+
+}
+
+// Footer
+
+footer{
+  height: 50px;
+  background-color: gray;
 }
