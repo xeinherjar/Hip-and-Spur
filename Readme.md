@@ -13,4 +13,5 @@
 - Lodash
 - jQuery
 
-
+## Attributions
+https://www.flickr.com/photos/75842623@N05/6814219589/in/photostream/
