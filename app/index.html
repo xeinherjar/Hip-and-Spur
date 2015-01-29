@@ -79,7 +79,28 @@
           </div>
         </div>
         <div class="reserve-content">
-          
+          <ul>
+            <li>
+              <h3>Your Name</h3>
+              <input type="text" placeholder="Phillip J. Fry">
+            </li>
+            <li>
+              <h3>Email Address</h3>
+              <input type="text" placeholder="pjfry@gmail.com">
+            </li>
+            <li>
+              <h3>Phone Number</h3>
+              <input type="text" placeholder="404-256-0016">
+            </li>
+            <li>
+              <h3>Date of Reservation</h3>
+              <input type="date">
+            </li>
+            <li>
+              <textarea name="Special Notes" id="" cols="30" rows="10" placeholder="Special Occassion...?">
+              </textarea>
+            </li>
+          <button>Submit</button>
         </div>
         <div class="location-content">
           <h3>Conveniently located in Downtown Decatur!</h3>
@@ -110,22 +131,12 @@
         <h3> {{ item }} </h3>
           <span> {{ price }} </span>
         <p> {{ description }} </p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button><i class="fa fa-exclamation"></i></button>
+        <button><i class="fa fa-star"></i></button>
+        <button><i class="fa fa-fire-extinguisher"></i></button>
+        <button><i class="fa fa-leaf"></i></button>
   </script> <!-- Entress Script -->
 
-  <!-- Appetizers Menu -->
-  <script type="text/template" id="menuTemp">
-        <h3> {{ item }} </h3>
-          <span> {{ price }} </span>
-        <p> {{ description }} </p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-  </script> <!-- Appetizers Script -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

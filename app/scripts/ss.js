@@ -4,7 +4,7 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 var menuItems, news, specials, menu, templateString, templateFunct, TemplateHTML;
 
 
-//Menu
+// Fetching Menu Data
 
 $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 	.done(function(data){
@@ -53,22 +53,22 @@ var menuSides = $('.sides'); // Where to dump
 		console.log('Fail')
 });
 
-//News
+// //News
 
-$.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/news/latest')
-	.done(function(data){
-		news = data;
-	}) .fail( function (){
-		console.log('Fail')
-	});
+// $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/news/latest')
+// 	.done(function(data){
+// 		news = data;
+// 	}) .fail( function (){
+// 		console.log('Fail')
+// 	});
 
 
 
-//Daily Specials
+// //Daily Specials
 
-$.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu/special')
-	.done(function(data){
-		specials = data;
-	}) .fail( function (){
-		console.log('Fail')
-	});
+// $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu/special')
+// 	.done(function(data){
+// 		specials = data;
+// 	}) .fail( function (){
+// 		console.log('Fail')
+// 	});
