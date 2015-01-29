@@ -96,6 +96,7 @@ header {
 
 }
 
+// Latest news
 .news {
   @include span-columns(6);
   height: 100px;
@@ -105,24 +106,35 @@ header {
   h4 {
     font-family: 'Lato', sans-serif;
     color: HSLA(186, 93%, 21%, 1);
-    padding-bottom: 6px;
-    font-size: 22px;
-    margin-bottom: 6px;
+    padding-bottom: 2px;
+    font-size: 24px;
+    margin-bottom: 10px;
     margin-top: 0px;
     border-bottom: 1px solid black;
     font-family: 'Lato', sans-serif;
-    font-style: italic;
+    font-style: oblique;
+    letter-spacing: 1px;
   }
+  h4 .newsdate {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    float: right;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+    letter-spacing: 0px;
+  }
+
   li {
       list-style: none;
-      font-size: 16px;
-      font-weight: bold italic;
+      font-size: 14px;
+      font-weight: bold;
       font-family: 'Lato', sans-serif;
-      margin-bottom: -4px;
     }
   p {
+      margin-top: -2px;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 12px;
       font-family: 'Lato', sans-serif;
     }
 }
