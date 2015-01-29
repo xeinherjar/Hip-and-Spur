@@ -49,6 +49,31 @@ var menuSides = $('.sides'); // Where to dump
 		menuSides.append(templateFunct(food))
 	});
 
+
+//Buttons
+
+	_.each(entrees, function(prop){
+
+		var butt = $('.buttons');
+		var but1 = $("#alg").css({"background-color":"black","color":"orange"});
+		var but2 = $("#fav").css({"background-color":"black","color":"yellow"});
+		var but3 = $("#spicy").css({"background-color":"black","color":"red"});
+		var but4 = $("#veg").css({"background-color":"green","color":"white"});	
+
+		if (prop.allergies === 1)
+			butt.toggleClass(but1);
+		if (prop.favorite === 1)
+			butt.toggleClass(but2);
+		if (prop.spicy === 1)
+			butt.toggleClass(but3);
+		if (prop.vegan === 1)
+			butt.toggleClass(but4);
+
+	}); 
+	
+
+
+
 }) 	.fail( function (){
 		console.log('Fail')
 });
@@ -72,3 +97,6 @@ var menuSides = $('.sides'); // Where to dump
 // 	}) .fail( function (){
 // 		console.log('Fail')
 // 	});
+
+
+

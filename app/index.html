@@ -10,6 +10,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -128,13 +129,20 @@
 
   <!-- Entree Menu -->
   <script type="text/template" id="menuTemp">
-        <h3> {{ item }} </h3>
+        <div class="item">
+          <h3> {{ item }} </h3>
           <span> {{ price }} </span>
-        <p> {{ description }} </p>
-        <button><i class="fa fa-exclamation"></i></button>
-        <button><i class="fa fa-star"></i></button>
-        <button><i class="fa fa-fire-extinguisher"></i></button>
-        <button><i class="fa fa-leaf"></i></button>
+        </div>
+        <div class="buttons">
+          <span class="alg"><i class="fa fa-exclamation"></i></span>
+          <span class="fav"><i class="fa fa-star"></i></span>
+          <span class="spicy"><i class="fa fa-fire-extinguisher"></i></span>
+          <span class="veg"><i class="fa fa-leaf"></i></span>
+        </div>
+        <div class="description"
+          <p> {{ description }} </p>
+        </div>
+        
   </script> <!-- Entress Script -->
 
 
