@@ -114,9 +114,10 @@ header {
 .header-slideshow{
   @include span-columns(12);
   @include omega();
+  overflow: hidden;
   height: 400px;
   background-color: yellow;
-
+  position: relative;
 }
 
 main{
@@ -139,3 +140,9 @@ footer{
   height: 50px;
   background-color: gray;
 }
+
+
+
+@import 'ss';
+@import 'ap';
+

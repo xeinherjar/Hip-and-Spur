@@ -1,0 +1,29 @@
+.menu-content{
+	background-color: white;
+	color: gray;
+		h1{
+			border-bottom: 6px double black;
+		}
+		h2{
+			border-bottom: 1px solid gray;
+		}
+		h3{
+			display: inline-block;
+			content:
+				"................";
+		}
+		.description{
+			width: 75%;
+		}
+		.buttons{
+			float: right;
+				span{
+					border-left: 1px solid gray;
+					padding-left: 8px;
+				}
+				span:first-child{
+					border: none;
+					padding: 5px;
+				}
+		}
+}
