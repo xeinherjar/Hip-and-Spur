@@ -4,42 +4,93 @@
 
 // Header
 .header-container{
-  background-color: hsla(185, 68%, 43%, 0.9);
-  height: 190px;
-  margin: 0 auto;
 
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 190px;
+height: 205px;
+margin: 0 auto;
+border-bottom: 6px solid hsla(191, 80%, 38%, 0.99);
 }
 
 header {
-  margin-top: 0px;
-
+margin-top: 0px;
+ margin: 0 auto;
 }
-
+.icon-main {
+  color: white;
+  position: absolute;
+  left: 404.3px;
+  top: 36px;
+}
+.icon-sec {
+  color: white;
+  position: absolute;
+  left: 420.7px;
+  top: 134px;
+}
 .header-logo h1 {
   font-size: 140px;
+  float: left;
+  padding-top: 35px;
   margin-top: 0px;
-  padding-top: 30px;
-  margin-bottom: 0px;
+  margin-left: 220px;
   color: white;
-  text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
-
 .and {
-  color: yellow;
+  color: hsla(191, 80%, 38%, 0.99);
 }
 .header-tagline h2 {
-  font-size: 21px;
-  text-align: center;
-  color: white;
+  font-size: 22px;
+  float: left;
   overflow: none;
-  margin-top: -160px;
-  padding-top: 136px;
+  padding-left: 390px;
+  margin-top: -116px;
+  color: white;
   padding-bottom: 50px;
   font-family: 'Josefin Sans', sans-serif;
 }
-
+.fa-facebook-official {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  color: white;
+  overflow: none;
+  float: left;
+}
+.social-media {
+  list-style: none;
+  margin-top: -186px;
+  color: white;
+  width: 45px;
+  font-family: 'Josefin Sans', sans-serif;
+  float: left;
+  padding-left: 1050px;
+  line-height: 22px;
+}
+.fa-instagram {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  color: white;
+  overflow: none;
+  float: left;
+}
+.fa-twitter {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  color: white;
+  overflow: none;
+  float: left;
+}
 // Container 
 
 .outer-container{
