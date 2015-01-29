@@ -26,13 +26,15 @@ $.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/late
 		});
 
 
+
+
+
 var latestNews = $('#news-template').html();
 
-// Turn it into a template function.
+
 var latestRendered = _.template(latestNews);
 
-// Pass in an object. Return value is a string
-// with the bee stings replaced with object's properties
+
  $.getJSON(latest).done (function (i){
  $('.news').append(latestRendered(i));
  });
@@ -40,11 +42,3 @@ var latestRendered = _.template(latestNews);
 
 
 
-
-
-// var newsText = '{"latestTitle"}' + '{"latestPost"}';
-// console.log (newsText);
-
-// var object = JSON.parse( function (newsText) {
-// 	console.log(object);
-// });
