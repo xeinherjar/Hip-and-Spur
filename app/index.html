@@ -17,6 +17,9 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,900italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="styles/main.css">
 
     <!-- endbuild -->
@@ -50,7 +53,22 @@
   <div class="outer-container">
     <div class="news-container">
       <div class="news">
-      </div> <!-- news -->
+
+
+
+
+
+    <script type="text/template" id="news-template">
+      <div>
+      <h4> Daily special </h4>
+      <li><%= title %></li>
+      <p><%= post %></p>
+      <li><%= "Date here" %></li>
+      </div>
+    </script>
+
+
+    </div> <!-- news -->
 
       <div class="daily-special">
       </div>
@@ -113,6 +131,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/ss.js"></script>
+        <script src="scripts/sb.js"></script>
         <script src="scripts/auth.js"></script>
         <script src="scripts/ap.js"></script>
         <script src="scripts/main.js"></script>
