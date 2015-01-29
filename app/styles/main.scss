@@ -3,83 +3,87 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Header
-.header-container{
+.header-container {
 
-background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 190px;
-height: 215px;
-border-bottom: 8px solid hsla(191, 80%, 38%, 0.99);
+background-color: #026873;
+background-image: linear-gradient(90deg, rgba(23, 23, 23, .07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(23, 23, 23, .13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(23, 23, 23, .17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(23, 23, 23, .19) 50%);
+background-size: 13px, 29px, 37px, 100%;
+border-bottom: 8px solid hsla(56, 90%, 61%, 1);
+overflow: auto;
 }
 
 header {
- margin-left: 215px;
- margin-right: 215px;
+  margin: 0 auto;
+  overflow: auto;
+  width: 980px;
+  position: relative;
 }
 .icon-main {
   color: white;
   position: absolute;
-  left: 304.3px;
-  top: 36px;
+  left: 89.4px;
+  top: 48px;
 }
 .icon-sec {
   color: white;
   position: absolute;
-  left: 320.7px;
-  top: 134px;
+  left: 105.4px;
+  top: 149.9px;
 }
 .header-logo h1 {
+  overflow: auto;
   font-size: 140px;
   float: left;
-  padding-top: 35px;
+  padding-top: 50px;
   margin-top: 0px;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: -2px;
+  margin-bottom: -23px;
 }
 .and {
-  color: hsla(191, 80%, 38%, 0.99);
+  color: hsla(56, 90%, 61%, 1);
 }
-h2 {
+.header-logo h2 {
   font-size: 23px;
-  float: left;
-  padding-left: 164px;
-  margin-top: -116px;
+  clear: left;
+  padding-left: 162px;
+  margin-right: 0px;
   color: white;
+  padding-bottom: 25px;
   font-family: 'Josefin Sans', sans-serif;
 }
 .social-media {
   list-style: none;
-  margin-top: -186px;
+  font-size: 18px;
+  margin-top: -135px;
   color: white;
-  width: 85px;
+  width: 95px;
   font-family: 'Josefin Sans', sans-serif;
   float: right;
-  line-height: 22px;
+  line-height: 25px;
 }
 .fa-facebook-official {
   width: 12px;
   height: 12px;
-  margin-right: 6px;
+  margin-right: 8px;
   color: white;
   float: left;
 }
 .fa-instagram {
   width: 12px;
   height: 12px;
-  margin-right: 6px;
+  margin-right: 8px;
   color: white;
   float: left;
 }
 .fa-twitter {
   width: 12px;
   height: 12px;
-  margin-right: 6px;
+  margin-right: 8px;
   color: white;
   float: left;
 }
