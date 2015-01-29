@@ -3,3 +3,18 @@
   border-radius: 3px;
   border: 1px solid RGBA(255, 255, 255, .5);
 }
+
+
+.slide-img {
+  width: 100%;
+  left:0;
+  position: absolute;
+  transition: left 2s ease-in;
+  z-index: 1;
+}
+
+.slide-img-hide {
+  position: relative;
+  left: 980px;
+  z-index: 0;
+}
