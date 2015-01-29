@@ -10,7 +10,10 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+
      <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+
+   
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -75,6 +78,11 @@
     </div> <!-- news-container -->
 
     <div class="header-slideshow">
+      <img src="images/header-01.jpg" class="slide-img"/>
+      <img src="images/header-02.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-03.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-04.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-05.jpg" class="slide-img slide-img-hide"/>
     </div> <!-- header-slideshow -->
 
     <main>
@@ -97,10 +105,43 @@
           
         </div>
         <div class="menu-content">
+          <h1> Our Hipster Dinner Menu ... </h1>
+          <div class="appetizers">
+          <h2>Appetizers</h2>
           
+          </div>
+          <div class="entrees">
+          <h2>Entrees</h2>
+            
+          </div>
+          <div class="sides">
+          <h2>Sides</h2>
+            
+          </div>
         </div>
         <div class="reserve-content">
-          
+          <ul>
+            <li>
+              <h3>Your Name</h3>
+              <input type="text" placeholder="Phillip J. Fry">
+            </li>
+            <li>
+              <h3>Email Address</h3>
+              <input type="text" placeholder="pjfry@gmail.com">
+            </li>
+            <li>
+              <h3>Phone Number</h3>
+              <input type="text" placeholder="404-256-0016">
+            </li>
+            <li>
+              <h3>Date of Reservation</h3>
+              <input type="date">
+            </li>
+            <li>
+              <textarea name="Special Notes" id="" cols="30" rows="10" placeholder="Special Occassion...?">
+              </textarea>
+            </li>
+          <button>Submit</button>
         </div>
         <div class="location-content">
           <h3>Conveniently located in Downtown Decatur!</h3>
@@ -121,6 +162,30 @@
     <footer>
     </footer>
   </div> <!-- footer-container -->
+
+
+
+  <!-- Scripts -->
+
+  <!-- Entree Menu -->
+  <script type="text/template" id="menuTemp">
+        <div class="item">
+          <h3> {{ item }} </h3>
+          <span> {{ price }} </span>
+        </div>
+        <div class="buttons">
+          <span class="alg"><i class="fa fa-exclamation"></i></span>
+          <span class="fav"><i class="fa fa-star"></i></span>
+          <span class="spicy"><i class="fa fa-fire-extinguisher"></i></span>
+          <span class="veg"><i class="fa fa-leaf"></i></span>
+        </div>
+        <div class="description"
+          <p> {{ description }} </p>
+        </div>
+        
+  </script> <!-- Entress Script -->
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
