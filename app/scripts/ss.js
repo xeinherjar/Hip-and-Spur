@@ -1,4 +1,7 @@
-var menuItems, news, specials
+// Double Curly Setup
+
+_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+var menuItems, news, specials, menu, templateString, templateFunct, TemplateHTML;
 
 
 //Menu
@@ -9,9 +12,46 @@ $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 		entrees = menu.entrees;
 		sides = menu.sides;
 		app = menu.appetizers;
-	}) .fail( function (){
-		console.log('Fail')
+
+// Entree Section
+
+	var menuEntrees = $('.entrees'); // Where to dump
+	
+	templateString = $('#menuTemp').html();
+	templateFunct = _.template(templateString);
+	templateHTML = templateFunct;
+
+	_.each(entrees, function(food){
+		menuEntrees.append(templateFunct(food))
 	});
+
+// Appetizers Section
+
+	var menuAppet = $('.appetizers'); // Where to dump
+	
+	templateString = $('#menuTemp').html();
+	templateFunct = _.template(templateString);
+	templateHTML = templateFunct;
+
+	_.each(app, function(food){
+		menuAppet.append(templateFunct(food))
+	});
+
+// Sides Section
+
+var menuSides = $('.sides'); // Where to dump
+	
+	templateString = $('#menuTemp').html();
+	templateFunct = _.template(templateString);
+	templateHTML = templateFunct;
+
+	_.each(sides, function(food){
+		menuSides.append(templateFunct(food))
+	});
+
+}) 	.fail( function (){
+		console.log('Fail')
+});
 
 //News
 
