@@ -175,14 +175,46 @@
             <span> {{ price }} </span>
           </li>
         </ul>
-        <div class="buttons">
-          <span class="alg"><i class="fa fa-exclamation"></i></span>
-          <span class="fav"><i class="fa fa-star"></i></span>
-          <span class="spicy"><i class="fa fa-fire-extinguisher"></i></span>
-          <span class="veg"><i class="fa fa-leaf"></i></span>
-        </div>
         <div class="description"
           <p> {{ description }} </p>
+        </div>
+         <div class="buttons">
+          <span class="alg
+          <% if (allergies === 1) { %> 
+            alg-active 
+            <% }; %>
+            "> 
+            <i class="fa fa-exclamation "></i>
+            <span> This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.
+            </span>
+          </span>
+          <span class="fav
+          <% if (favorite === 1) { %>
+            fav-active
+            <% }; %> 
+            "> 
+            <i class="fa fa-star"></i>
+            <span> We have been doing this a long time and this item has become one of our favorites.
+            </span>
+          </span>
+          <span class="spicy
+          <% if (spicy === 1) { %>
+            spicy-active
+            <% }; %>
+            ">
+            <i class="fa fa-fire-extinguisher"></i>
+            <span> This item is spicy, please handle with care and drink lots of water.
+            </span>
+          </span>
+          <span class="veg
+          <% if (vegan === 1) { %>
+            vegan-active
+            <% }; %>
+            ">
+            <i class="fa fa-leaf"></i>
+            <span> This item contains no meat and has been prepared without the use of animal products.
+            </span>
+          </span>
         </div>
         
   </script> <!-- Entress Script -->

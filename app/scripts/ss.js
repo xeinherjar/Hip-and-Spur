@@ -50,14 +50,7 @@ var menuSides = $('.sides'); // Where to dump
 		menuSides.append(templateFunct(food))
 	});
 
-
-//Buttons
-
-	var veg = _.each(entrees, function(vegan){
-		return vegan.vegan;
-	}); 
-	
-
+	 
 
 
 }) 	.fail( function (){
