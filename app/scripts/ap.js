@@ -18,12 +18,18 @@ $.ajax({
        })
 
       for (var i = 0; i < 4; i++) {
-      var img = '<a href="#"><div class="ig-card">' +
-        '<img src=' + img_urls[i] + ' class="ig-img" />' +
-        '</div></a>';
-      aside.append(img);
+        var img = '<a href="#"><div class="ig-card">' +
+          '<img src=' + img_urls[i] + ' class="ig-img" />' +
+          '</div></a>';
+        aside.append(img);
       }
 
+    },
+    fail: function() {
+      for (var i = 0; i < 4; i++) {
+       var img = '<div class="ig-card" "ig-fail">Unable to reach Instagram</div>';
+       aside.append(img);
+      }
     }
 });
 
