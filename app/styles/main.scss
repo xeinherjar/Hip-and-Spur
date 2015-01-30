@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-header{
+.header {
   height: 50px;
   background-color: gray;
 
@@ -48,7 +48,7 @@ header{
 
 }
 
-main{
+.main{
   @include span-columns(9);
   height: 700px;
   background-color: blue;
@@ -60,6 +60,47 @@ aside{
   height: 400px;
   background-color: orange;
 
+}
+
+.icon-white, .nav-pills > .active > a > [class^="icon-"] {
+  background-image: url("../img/glyphicons-halflings-white.png");
+}
+
+
+.nav-pills > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+
+.nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.nav-pills > .active > a {
+  color: #ffffff;
+  background-color: #0088cc;
+}
+
+
+.nav-pills .data-toggle {
+  color: #ffffff;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.pill-content > .active {
+  display: block;
 }
 
 // Footer
