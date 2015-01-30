@@ -97,7 +97,7 @@ header {
 // Latest news
 .news {
   @include span-columns(6);
-  height: 100px;
+  min-height: 200px;
   background-color: none;
   margin-top: 25px;
 
@@ -148,6 +148,7 @@ header {
   height: 400px;
   overflow: hidden;
   position: relative;
+  margin: 25px 0;
 }
 
 main{
