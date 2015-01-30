@@ -58,45 +58,74 @@ header {
 }
 .social-media {
   list-style: none;
-  font-size: 18px;
-  margin-top: -115px;
+  font-size: 20px;
+  margin-top: -110px;
   color: white;
-  width: 95px;
+  width: 130px;
   font-family: 'Josefin Sans', sans-serif;
   float: right;
-  line-height: 25px;
+  line-height: 20px;
 }
 .fa-facebook-official {
-  padding-left: 2px;
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin-left: -5px;
+  margin-right: -8px;
   color: white;
-  float: left;
 }
+.fa-facebook-official:hover {
+  border: 3px solid hsla(56, 90%, 61%, 1);
+  transition: 1s ease;
+}
+
 .fa-instagram {
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
+  display: inline-block;
+  padding-left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: -8px;
   color: white;
-  float: left;
+  transition: 1s ease;
+}
+.fa-instagram:hover {
+  border: 3px solid hsla(56, 90%, 61%, 1);
 }
 .fa-twitter {
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
+  display: inline-block;
+  padding-left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: -8px;
   color: white;
-  float: left;
+  transition: 1s ease;
+}
+.fa-twitter:hover {
+  border: 3px solid hsla(56, 90%, 61%, 1);
+  transition: 1s ease;
 }
 .fa-pinterest {
-  width: 12px;
-  height: 12px;
-  margin-right: 2px;
+  display: inline-block;
+  padding-left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: -5px;
   color: white;
-  float: left;
+  transition: 1s ease;
 }
-
-
+.fa-pinterest:hover {
+  border: 3px solid hsla(56, 90%, 61%, 1);
+  transition: 1s ease;
+}
 // Container 
 
 .outer-container{
