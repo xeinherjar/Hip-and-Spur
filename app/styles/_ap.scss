@@ -8,6 +8,7 @@
 
   h3 {
     margin-bottom: 5px;
+    color: RGB(11, 93, 102);
   }
 
   input[type="text"], input[type="date"] {
@@ -23,6 +24,16 @@
     border: 1px solid lightgray;
     margin: 15px 0;
     width: 75%;
+  }
+
+  button {
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    color: white;
+    background-color: RGB(11, 93, 102);
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
