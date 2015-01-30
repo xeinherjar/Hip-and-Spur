@@ -3,105 +3,213 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Header
+.header-container {
 
-.header-container{
-  background-color: lightgray;
-  height: 50px;
+background-color: #026873;
+background-image: linear-gradient(90deg, rgba(23, 23, 23, .07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(23, 23, 23, .13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(23, 23, 23, .17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(23, 23, 23, .19) 50%);
+background-size: 13px, 29px, 37px, 100%;
+border-bottom: 8px solid hsla(56, 90%, 61%, 1);
+overflow: auto;
+}
+
+header {
   margin: 0 auto;
+  overflow: auto;
+  width: 980px;
+  position: relative;
 }
 
-.header {
-  height: 50px;
-  background-color: gray;
-
+.icon-main {
+  color: white;
+  position: absolute;
+  left: 89.4px;
+  top: 48px;
 }
+.icon-sec {
+  color: white;
+  position: absolute;
+  left: 105.4px;
+  top: 149.9px;
+}
+.header-logo h1 {
+  overflow: auto;
+  font-size: 140px;
+  float: left;
+  padding-top: 50px;
+  margin-top: 0px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: -24px;
+}
+.and {
+  color: hsla(56, 90%, 61%, 1);
+}
+.header-logo h2 {
+  font-size: 22.6px;
+  clear: left;
+  padding-left: 152px;
+  margin-right: 0px;
+  color: white;
+  padding-bottom: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.social-media {
+  list-style: none;
+  font-size: 18px;
+  margin-top: -115px;
+  color: white;
+  width: 95px;
+  font-family: 'Josefin Sans', sans-serif;
+  float: right;
+  line-height: 25px;
+}
+.fa-facebook-official {
+  padding-left: 2px;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  color: white;
+  float: left;
+}
+.fa-instagram {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  color: white;
+  float: left;
+}
+.fa-twitter {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  color: white;
+  float: left;
+}
+.fa-pinterest {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+  color: white;
+  float: left;
+}
+
 
 // Container 
 
 .outer-container{
   @include outer-container;
   width: 980px;
-  background-color: green;
-
 }
 
-.news{
+// Latest news
+.news {
   @include span-columns(6);
-  height: 100px;
-  background-color: blue;
+  min-height: 200px;
+  background-color: none;
+  margin-top: 25px;
 
+  h4 {
+    font-family: 'Lato', sans-serif;
+    color: HSLA(186, 93%, 21%, 1);
+    padding-bottom: 2px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    font-family: 'Lato', sans-serif;
+    font-style: oblique;
+    letter-spacing: 1px;
+  }
+  h4 .newsdate {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    float: right;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+    letter-spacing: 0px;
+  }
+
+  li {
+      list-style: none;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+    }
+  p {
+      margin-top: -2px;
+      font-weight: normal;
+      font-size: 14px;
+      font-family: 'Lato', sans-serif;
+    }
 }
 
 .daily-special{
   @include span-columns(6);
   @include omega();
-  height: 100px;
-  background-color: orange;
-
 }
 
 .header-slideshow{
   @include span-columns(12);
   @include omega();
   height: 400px;
-  background-color: yellow;
-
+  overflow: hidden;
+  position: relative;
+  margin: 25px 0;
 }
 
-.main{
+main{
   @include span-columns(9);
-  height: 700px;
-  background-color: blue;
 }
 
 aside{
   @include span-columns(3);
   @include omega();
-  height: 400px;
-  background-color: orange;
-
 }
 
-.icon-white, .nav-pills > .active > a > [class^="icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+//TABS
+.icon-white,.nav-pills > .active > a {
+  background-image:url(../img/glyphicons-halflings-white.png)
 }
-
 
 .nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 2px;
-  line-height: 14px;
+  padding-right:12px;
+  padding-left:12px;
+  margin-right:2px;
+  line-height:14px
 }
 
-
 .nav-pills > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-radius: 5px;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-top:2px;
+  margin-bottom:2px;
+  border-radius:5px
 }
 
 .nav-pills > .active > a {
-  color: #ffffff;
-  background-color: #0088cc;
+  color:#fff;
+  background-color:#08c
 }
-
 
 .nav-pills .data-toggle {
-  color: #ffffff;
-  background-color: #999999;
-  border-color: #999999;
+  color:#fff;
+  background-color:#999;
+  border-color:#999
 }
 
-.pill-content > .pill-pane {
-  display: none;
+.tab-content > .tab-pane {
+  display:none
 }
 
-.pill-content > .active {
-  display: block;
+.tab-pane-active >  {
+  display:block
 }
+
 
 // Footer
 
@@ -109,3 +217,7 @@ footer{
   height: 50px;
   background-color: gray;
 }
+
+
+@import 'ss';
+@import 'ap';

@@ -1,0 +1,55 @@
+.menu-content{
+	background-color: white;
+	color: gray;
+		h1{
+			border-bottom: 6px double black;
+		}
+		h2{
+			border-bottom: 1px solid gray;
+		}
+	 ul.item {
+            max-width: 50em;
+            padding: 0;
+            overflow-x: hidden;
+            list-style: none
+        }
+        ul.item li:after {
+            float: left;
+            width: 0;
+            white-space: nowrap;
+            content: ". . . . . . . . . . . . . . . . . . . . "
+                     ". . . . . . . . . . . . . . . . . . . . "
+                     ". . . . . . . . . . . . . . . . . . . . "
+                     ". . . . . . . . . . . . . . . . . . . . "
+        }
+        ul.item span:first-child {
+            padding-right: 0.33em;
+            background: white;
+						font-size: 1.2rem;
+        }
+        ul.item span + span {
+            float: right;
+            padding-left: 0.33em;
+            background: white;
+            position: relative;
+            z-index: 1
+        }
+        .seperator:after {
+            content: "" !important;
+        }
+		.description{
+			width: 75%;
+			font-size: .7rem;
+		}
+		.buttons{
+			float: right;
+				span{
+					border-left: 1px solid gray;
+					padding-left: 8px;
+				}
+				span:first-child{
+					border: none;
+					padding: 5px;
+				}
+		}
+}
