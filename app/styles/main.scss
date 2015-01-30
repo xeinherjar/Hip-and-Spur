@@ -102,8 +102,6 @@ header {
 .outer-container{
   @include outer-container;
   width: 980px;
-  background-color: green;
-
 }
 
 // Latest news
@@ -152,32 +150,23 @@ header {
 .daily-special{
   @include span-columns(6);
   @include omega();
-  height: 100px;
-  background-color: orange;
-
 }
 
 .header-slideshow{
   @include span-columns(12);
   @include omega();
-  overflow: hidden;
   height: 400px;
-  background-color: yellow;
+  overflow: hidden;
   position: relative;
 }
 
 main{
   @include span-columns(9);
-  height: 700px;
-  background-color: blue;
 }
 
 aside{
   @include span-columns(3);
   @include omega();
-  height: 400px;
-  background-color: orange;
-
 }
 
 // Footer
@@ -191,4 +180,3 @@ footer{
 
 @import 'ss';
 @import 'ap';
-
