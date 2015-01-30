@@ -48,9 +48,9 @@ header {
   color: hsla(56, 90%, 61%, 1);
 }
 .header-logo h2 {
-  font-size: 23px;
+  font-size: 22.6px;
   clear: left;
-  padding-left: 162px;
+  padding-left: 152px;
   margin-right: 0px;
   color: white;
   padding-bottom: 25px;
@@ -59,7 +59,7 @@ header {
 .social-media {
   list-style: none;
   font-size: 18px;
-  margin-top: -135px;
+  margin-top: -115px;
   color: white;
   width: 95px;
   font-family: 'Josefin Sans', sans-serif;
@@ -67,26 +67,36 @@ header {
   line-height: 25px;
 }
 .fa-facebook-official {
+  padding-left: 2px;
   width: 12px;
   height: 12px;
-  margin-right: 8px;
+  margin-right: 10px;
   color: white;
   float: left;
 }
 .fa-instagram {
   width: 12px;
   height: 12px;
-  margin-right: 8px;
+  margin-right: 10px;
   color: white;
   float: left;
 }
 .fa-twitter {
   width: 12px;
   height: 12px;
-  margin-right: 8px;
+  margin-right: 10px;
   color: white;
   float: left;
 }
+.fa-pinterest {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+  color: white;
+  float: left;
+}
+
+
 // Container 
 
 .outer-container{
@@ -132,7 +142,7 @@ header {
   p {
       margin-top: -2px;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 14px;
       font-family: 'Lato', sans-serif;
     }
 }
