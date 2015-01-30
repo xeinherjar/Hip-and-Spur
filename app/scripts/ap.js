@@ -57,15 +57,11 @@ setInterval( function() {
   if (!(count < total)) {
     count = 0;
     slide_img.eq(count).removeClass('slide-img-hide');
-    setTimeout(function() {
-      slide_img.eq(total).addClass('slide-img-hide');
-    }, 2500);
+    slide_img.eq(total).addClass('slide-img-hide');
   } else {
     count += 1;
     slide_img.eq(count).removeClass('slide-img-hide');
-    setTimeout(function() {
-      slide_img.eq(count - 1).addClass('slide-img-hide');
-    }, 2500);
+    slide_img.eq(count - 1).addClass('slide-img-hide');
   }
 
 }, 5000);
