@@ -18,12 +18,18 @@ $.ajax({
        })
 
       for (var i = 0; i < 4; i++) {
-      var img = '<a href="#"><div class="ig-card">' +
-        '<img src=' + img_urls[i] + ' class="ig-img" />' +
-        '</div></a>';
-      aside.append(img);
+        var img = '<a href="#"><div class="ig-card">' +
+          '<img src=' + img_urls[i] + ' class="ig-img" />' +
+          '</div></a>';
+        aside.append(img);
       }
 
+    },
+    fail: function() {
+      for (var i = 0; i < 4; i++) {
+       var img = '<div class="ig-card" "ig-fail">Unable to reach Instagram</div>';
+       aside.append(img);
+      }
     }
 });
 
@@ -51,15 +57,11 @@ setInterval( function() {
   if (!(count < total)) {
     count = 0;
     slide_img.eq(count).removeClass('slide-img-hide');
-    setTimeout(function() {
-      slide_img.eq(total).addClass('slide-img-hide');
-    }, 2500);
+    slide_img.eq(total).addClass('slide-img-hide');
   } else {
     count += 1;
     slide_img.eq(count).removeClass('slide-img-hide');
-    setTimeout(function() {
-      slide_img.eq(count - 1).addClass('slide-img-hide');
-    }, 2500);
+    slide_img.eq(count - 1).addClass('slide-img-hide');
   }
 
 }, 5000);
