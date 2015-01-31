@@ -14,7 +14,7 @@ $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 		sides = menu.sides;
 		app = menu.appetizers;
 
-// Entree Section
+	// Entree Section
 
 	var menuEntrees = $('.entrees'); // Where to dump
 	
@@ -23,11 +23,10 @@ $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 	templateHTML = templateFunct;
 
 	_.each(entrees, function(food){
-		console.log(food)
 		menuEntrees.append(templateFunct(food))
 	});
 
-// Appetizers Section
+	// Appetizers Section
 
 	var menuAppet = $('.appetizers'); // Where to dump
 	
@@ -39,9 +38,9 @@ $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 		menuAppet.append(templateFunct(food))
 	});
 
-// Sides Section
+	// Sides Section
 
-var menuSides = $('.sides'); // Where to dump
+	var menuSides = $('.sides'); // Where to dump
 	
 	templateString = $('#menuTemp').html();
 	templateFunct = _.template(templateString);
@@ -51,30 +50,68 @@ var menuSides = $('.sides'); // Where to dump
 		menuSides.append(templateFunct(food))
 	});
 
-	 
-
 
 }) 	.fail( function (){
 		console.log('Fail')
 });
 
-// //News
 
-// $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/news/latest')
-// 	.done(function(data){
-// 		news = data;
-// 	}) .fail( function (){
-// 		console.log('Fail')
-// 	});
+// Tab Structure
 
 
+$('.story-tab').on('click', function(){
+	$('.story-content').addClass('story-active');
+	$('.menu-content').addClass('menu-hidden');
+	$('.location-content').removeClass('location-active');
+	$('.reserve-content').removeClass('reserve-active');
 
+});
+$('.menu-tab').on('click', function(){
+	$('.menu-content').toggleClass('menu-hidden');
+	$('.story-content').removeClass('story-active');
+	$('.location-content').removeClass('location-active');
+	$('.reserve-content').removeClass('reserve-active');
+
+});
+$('.location-tab').on('click', function(){
+	$('.location-content').addClass('location-active');
+	$('.story-content').removeClass('story-active');
+	$('.menu-content').addClass('menu-hidden');
+	$('.reserve-content').removeClass('reserve-active');
+
+});
+$('.reserve-tab').on('click', function(){
+	$('.reserve-content').addClass('reserve-active');
+	$('.menu-content').addClass('menu-hidden');
+	$('.story-content').removeClass('story-active');
+
+});
 // //Daily Specials
 
 // $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu/special')
 // 	.done(function(data){
 // 		specials = data;
-// 	}) .fail( function (){
-// 		console.log('Fail')
+// 		specItem = specials.menu_item_id;
+// 		menuSp = $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
+// 			.done(function(data){
+// 			menu = data;
+// 			entrees = menu.entrees;
+// 			sides = menu.sides;
+// 			app = menu.appetizers;
+			
+// 				var dailySpecials = $('.daily-special')
+
+// 				_.each(entrees, function(special){
+// 				if(specItem === entrees.id){
+// 					dailySpecials.append(special.item)
+// 					console.log(special.item)
+// 					}
+// 			})
+
 // 	});
+	
+
+// }) .fail( function (){
+// 	console.log('Fail')
+// });
 
