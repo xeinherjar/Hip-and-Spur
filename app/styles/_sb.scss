@@ -1,3 +1,18 @@
+.tabs{
+    border-bottom: none;
+    margin-left: none;
+
+}
+.tabs li a {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: HSLA(185, 100%, 23%, 1);
+    margin-right: 6px;
+    margin-bottom: 30px;
+    }
+
+
 .menu-content{
 	background-color: white;
 	color: gray;
@@ -6,12 +21,14 @@
             font-family: 'Lato', sans-serif;
             font-size: 25px;
             margin-bottom: 10px;
+            display: inline-block;
             margin-top: 0px;
             border-bottom: 1px solid lightgray;
             border-left: 1px solid lightgray;
             padding-left: 8px;
             letter-spacing: 5px;
             height: 100%;
+            width: 100%;
             font-weight: 900;
             text-transform: uppercase;
             padding-bottom: 2px;
@@ -29,8 +46,9 @@
     
 		}
 	 ul.item {
-            max-width: 80em;
+            max-width: 50em;
             padding: 0;
+            display: block;
             overflow-x: hidden;
             list-style: none;
             font-family: 'Lato', sans-serif;
@@ -53,7 +71,7 @@
         ul.item span:first-child {
             padding-right: 0.33em;
             background: white;
-						font-size: 1.1rem;
+			font-size: 1.1rem;
         }
         ul.item span + span {
             float: right;
@@ -69,7 +87,7 @@
 			width: 79%;
 			font-size: .74rem;
             font-family: 'Lato', sans-serif;
-            font-weight: 400;
+            font-weight: normal;
 		}
 		.buttons{
 			float: right;
@@ -81,9 +99,56 @@
 					border: none;
 					padding: 5px;
 				}
+                :hover{
+                cursor: default;
 		}
 }
+    .alg-active{
+        color: orange;
+        position: relative;
+        :hover{
+            cursor: pointer;
+        }
+    }
+    .fav-active{
+        color: yellow;
+    }
+    .spicy-active{
+        color: red;
+    }
+    .veg-active{
+        color: green;
+    }
+    .buttons span span{
+        background:#F8F8F8;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    color: #717171;
+    font-size: 13px;
+    height: 30px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    left: 10%;
+    display:none;
+    padding:0 20px;
+    width: 400px;
+    height: auto;
+    }
+    
+   .buttons span{
+    margin:1px;
+    position:relative;
+    cursor:pointer;
+   }
+    .buttons span:hover span{
+        display: block;
+        z-index: 500;
+    }
 
+}
 
 .reserve-content {
   ul {
