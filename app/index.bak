@@ -28,32 +28,92 @@
     rel='stylesheet' type='text/css'>
     <link href="styles/main.css" rel="stylesheet"><!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+
+    <script src="../bower_components/modernizr/modernizr.js"></script><!-- endbuild -->
   </head>
-  
   <body>
   <div class="header-container">
     <header>
-      
       <div class="header-logo"> 
         <span class="icon-main"><i class="fa fa-caret-down fa-5x"></i> </span>
         <span class="icon-sec"><i class="fa fa-minus fa-1x"></i> </span>
         <h1>Hip <span class="and">&</span> Stir</h1> 
         <h2>Decatur's swanky spot for good libations</h2>
       </div>
-      
       <div class="social-media">
-        <li>Find us on ...</li>
+             <li>Find us on ...</li>
         <a href="http://www.facebook.com"> <i class="fa fa-facebook-official"></i> </a>
         <a href="http://www.instagram.com"><i class="fa fa-instagram"></i> </a>
         <a href="http://www.twitter.com"> <i class="fa fa-twitter"></i></a>
         <a href="http://www.pinterest.com"> <i class="fa fa-pinterest"></i> </a>
+  
       </div>
      
     </header>
-  
   </div> <!-- header-container -->
+<<<<<<< HEAD
+
+  <div class="outer-container">
+    <div class="news-container">
+      <div class="news">
+
+
+
+
+
+    <script type="text/template" id="news-template">
+      <div>
+      <h4> Latest Headlines <span class="newsdate">Feb. 1 </h4>
+      <li>{{ title }}</li>
+      <p>{{ post }}</p>
+      <li{{ "Date here" }}</li>
+      </div>
+    </script>
+
+
+    </div> <!-- news -->
+
+      <div class="daily-special">
+      </div>
+    </div> <!-- news-container -->
+
+    <div class="header-slideshow">
+      <img src="images/header-01.jpg" class="slide-img"/>
+      <img src="images/header-02.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-03.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-04.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-05.jpg" class="slide-img slide-img-hide"/>
+    </div> <!-- header-slideshow -->
+
+    <main>
+      <div class="tabs">
+        <div class="story">
+          
+        </div>
+        <div class="menu">
+          
+        </div>
+        <div class="reserve">
+          
+        </div>
+        <div class="location">
+          
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="story-content">
+          
+        </div>
+        <div class="menu-content">
+          <h1> Our Hipster Dinner Menu ... </h1>
+          <div class="appetizers">
+          <h2>Appetizers</h2>
+          
+          </div>
+          <div class="entrees">
+          <h2>Entrees</h2>
+            
+=======
     <div class="container">
       <div class="outer-container">
         <div class="news-container">
@@ -67,20 +127,20 @@
             </div>
             </script>
           </div><!-- news -->
-          
           <div class="daily-special">
             <h4>daily specials</h4>
+>>>>>>> staging
           </div>
         </div><!-- news-container -->
-        
         <div class="header-slideshow">
           <img class="slide-img" src="images/header-01.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-02.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-03.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-04.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-05.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-02.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-03.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-04.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-05.jpg">
         </div><!-- header-slideshow -->
-        
         <main>
           <div class="tabs">
             <ul class="nav nav-pills">
@@ -125,70 +185,84 @@
                 Decatur. Our passion is food, serving vegan and
                 artisnal craft beer.
               </p>
+              </div>
             </div>
-         </div>
-          
-          <div class="menu-content">
-            <h1>Our Hipster Dinner Menu ...</h1>
-            <div class="appetizers">
-              <h2>Appetizers</h2>
-            </div>
-            <div class="entrees">
-              <h2>Entrees</h2>
-            </div>
-            <div class="sides">
-              <h2>Sides</h2>
-            </div>
-          </div> <!-- menu-content -->
-          <div class="reserve-content">
-            <ul>
-              <li>
-                <h3>Your Name</h3>
-                <input placeholder="Phillip J. Fry" type="text">
-              </li>
-              <li>
-                <h3>Email Address</h3>
-                <input placeholder="pjfry@gmail.com" type="text">
-              </li>
-              <li>
-                <h3>Phone Number</h3>
-                <input placeholder="404-256-0016" type="text">
-              </li>
-              <li>
-                <h3>Date of Reservation</h3>
-                <input type="date">
-              </li>
-              <li>
-                <textarea cols="30" id="" name="Special Notes" 
-                  placeholder="Special Occassion...?" rows="10">
-                </textarea>
+            <div class="menu-content">
+              <h1>
+                Our Hipster Dinner Menu ...
+              </h1>
+              <div class="appetizers">
+                <h2>
+                  Appetizers
+                </h2>
+              </div>
+              <div class="entrees">
+                <h2>
+                  Entrees
+                </h2>
+              </div>
+              <div class="sides">
+                <h2>
+                  Sides
+                </h2>
+              </div>
+            </div> <!-- menu-content -->
+            <div class="reserve-content">
+              <ul>
+                <li>
+                  <h3>
+                    Your Name
+                  </h3><input placeholder="Phillip J. Fry"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Email Address
+                  </h3><input placeholder="pjfry@gmail.com"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Phone Number
+                  </h3><input placeholder="404-256-0016"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Date of Reservation
+                  </h3><input type="date">
+                </li>
+                <li>
+                  <textarea cols="30" id="" name=
+                  "Special Notes" placeholder=
+                  "Special Occassion...?" rows="10">
+</textarea>
                 </li>
                 <li style="list-style: none">
                   <button>Submit</button>
                 </li>
               </ul>
             </div> <!--reserve-content-->
-            
             <div class="location-content">
-              <h3>Conveniently located in Downtown Decatur!</h3>
-              <iframe frameborder="0" height="400" src=
-                "https://www.google.com/maps/embed/v1/place?q=125%20East%20Court%20Square%2C%20Decatur%2C%20GA%2030030%2C%20United%20States&key=AIzaSyDmo8f7b7W699zgbIb20BLKXijiSJUnO4g"
-                style="border:0" width="400">
-              </iframe>
+              <h3>
+                Conveniently located in Downtown Decatur!
+              </h3><iframe frameborder="0" height="400" src=
+              "https://www.google.com/maps/embed/v1/place?q=125%20East%20Court%20Square%2C%20Decatur%2C%20GA%2030030%2C%20United%20States&key=AIzaSyDmo8f7b7W699zgbIb20BLKXijiSJUnO4g"
+              style="border:0" width="400"></iframe>
             </div>
         </main>
         <aside></aside>
       </div><!-- outer-container -->
-  
   <div class="footer-container">
     <footer>
       <li>Hip & Stir 
-        <span class="foottagline">Decatur's swanky spot for good libations</span> 
+        <span class="foottagline"> Decatur's swanky spot for good libations</span> 
         <span class="footaddress">
         125 Court Square  |  Decatur, GA  30030  |  404-123-4567  Questions or comments? Email us at hip&stir.com</span>
       </li>
     </footer>
   </div> <!-- footer-container -->
+
 
   <!-- Scripts -->
 

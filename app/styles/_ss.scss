@@ -102,7 +102,45 @@
 		z-index: 500;
 	}
 
+}
+.tabs{
+	height: 30px;
+	border-bottom: 1px solid gray;
+	ul{ 
+	list-style: none;
+}
+	a{
+		float: left;
+		text-decoration: none;
+		color: gray;
+	}
+	a:hover{
+		box-shadow: 0 0 1em #0A4348;
+  	transition: 1s ease;
+	}
+}
 
-
-
+.menu-hidden{
+	display:none;
+}
+.reserve-content{
+	display: none;
+}
+.reserve-active{
+	display:block;
+}
+.location-content{
+	display: none;
+}
+.location-active{
+	display:block;
+}
+.story-content{
+	display:none;
+}
+.story-active{
+	display:block;
+}
+.libations{
+	display: none;
 }

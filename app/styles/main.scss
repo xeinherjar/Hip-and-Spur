@@ -139,40 +139,51 @@ header {
   @include span-columns(6);
   min-height: 200px;
   background-color: none;
-  margin-top: 25px;
+  margin-top: 45px;
 
   h4 {
     font-family: 'Lato', sans-serif;
-    color: HSLA(186, 93%, 21%, 1);
+    color: HSLA(185, 100%, 23%, 1);
     padding-bottom: 2px;
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 10px;
     margin-top: 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding-left: 8px;
     font-family: 'Lato', sans-serif;
-    font-style: oblique;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
+    height: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
   }
   h4 .newsdate {
     font-family: 'Lato', sans-serif;
     color: black;
     float: right;
-    padding-top: 10px;
-    font-size: 14px;
+    text-transform: capitalize;
+    padding-top: 8px;
+    font-size: 17px;
     margin-top: 0px;
     letter-spacing: 0px;
   }
 
   li {
       list-style: none;
-      font-size: 14px;
+      font-size: 21px;
+      color: gray;
       font-weight: bold;
+      font-style: oblique;
       font-family: 'Lato', sans-serif;
+      padding-top: 6px;
+      letter-spacing: 1px;
+      padding-bottom: 3px;
     }
   p {
       margin-top: -2px;
       font-weight: normal;
       font-size: 14px;
+      line-height: 20px;
       font-family: 'Lato', sans-serif;
     }
 }
@@ -279,3 +290,4 @@ footer  {
 
 @import 'ss';
 @import 'ap';
+@import 'sb';
