@@ -67,7 +67,7 @@ $('.story-tab').on('click', function(){
 
 });
 $('.menu-tab').on('click', function(){
-	$('.menu-content').toggleClass('menu-hidden');
+	$('.menu-content').toggleClass('menu-active');
 	$('.story-content').removeClass('story-active');
 	$('.location-content').removeClass('location-active');
 	$('.reserve-content').removeClass('reserve-active');
@@ -84,6 +84,7 @@ $('.reserve-tab').on('click', function(){
 	$('.reserve-content').addClass('reserve-active');
 	$('.menu-content').addClass('menu-hidden');
 	$('.story-content').removeClass('story-active');
+	$('.location-content').removeClass('location-active');
 
 });
 // //Daily Specials
