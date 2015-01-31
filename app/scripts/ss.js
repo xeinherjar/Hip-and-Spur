@@ -23,6 +23,7 @@ $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
 	templateHTML = templateFunct;
 
 	_.each(entrees, function(food){
+		console.log(food)
 		menuEntrees.append(templateFunct(food))
 	});
 
@@ -50,14 +51,7 @@ var menuSides = $('.sides'); // Where to dump
 		menuSides.append(templateFunct(food))
 	});
 
-
-//Buttons
-
-	var veg = _.each(entrees, function(vegan){
-		return vegan.vegan;
-	}); 
-	
-
+	 
 
 
 }) 	.fail( function (){

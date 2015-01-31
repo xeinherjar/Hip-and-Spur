@@ -9,6 +9,7 @@
 		}
 	 ul.item {
             max-width: 50em;
+            display: block;
             padding: 0;
             overflow-x: hidden;
             list-style: none
@@ -42,7 +43,8 @@
 			font-size: .7rem;
 		}
 		.buttons{
-			float: right;
+			padding-top: 5px;
+			text-align: right;
 				span{
 					border-left: 1px solid gray;
 					padding-left: 8px;
@@ -51,5 +53,56 @@
 					border: none;
 					padding: 5px;
 				}
+			:hover{
+				cursor: default;
+			}
 		}
+	.alg-active{
+		color: orange;
+		position: relative;
+		:hover{
+			cursor: pointer;
+		}
+	}
+	.fav-active{
+		color: yellow;
+	}
+	.spicy-active{
+		color: red;
+	}
+	.veg-active{
+		color: green;
+	}
+	.buttons span span{
+		background:#F8F8F8;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    color: #717171;
+    font-size: 13px;
+    height: 30px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    left: 10%;
+    display:none;
+    padding:0 20px;
+    width: 400px;
+    height: auto;
+	}
+	
+   .buttons span{
+   	margin:1px;
+    position:relative;
+    cursor:pointer;
+   }
+	.buttons span:hover span{
+		display: block;
+		z-index: 500;
+	}
+
+
+
+
 }
