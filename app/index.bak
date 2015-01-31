@@ -51,6 +51,69 @@
      
     </header>
   </div> <!-- header-container -->
+<<<<<<< HEAD
+
+  <div class="outer-container">
+    <div class="news-container">
+      <div class="news">
+
+
+
+
+
+    <script type="text/template" id="news-template">
+      <div>
+      <h4> Latest Headlines <span class="newsdate">Feb. 1 </h4>
+      <li>{{ title }}</li>
+      <p>{{ post }}</p>
+      <li{{ "Date here" }}</li>
+      </div>
+    </script>
+
+
+    </div> <!-- news -->
+
+      <div class="daily-special">
+      </div>
+    </div> <!-- news-container -->
+
+    <div class="header-slideshow">
+      <img src="images/header-01.jpg" class="slide-img"/>
+      <img src="images/header-02.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-03.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-04.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-05.jpg" class="slide-img slide-img-hide"/>
+    </div> <!-- header-slideshow -->
+
+    <main>
+      <div class="tabs">
+        <div class="story">
+          
+        </div>
+        <div class="menu">
+          
+        </div>
+        <div class="reserve">
+          
+        </div>
+        <div class="location">
+          
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="story-content">
+          
+        </div>
+        <div class="menu-content">
+          <h1> Our Hipster Dinner Menu ... </h1>
+          <div class="appetizers">
+          <h2>Appetizers</h2>
+          
+          </div>
+          <div class="entrees">
+          <h2>Entrees</h2>
+            
+=======
     <div class="container">
       <div class="outer-container">
         <div class="news-container">
@@ -66,6 +129,7 @@
           </div><!-- news -->
           <div class="daily-special">
             <h4>daily specials</h4>
+>>>>>>> staging
           </div>
         </div><!-- news-container -->
         <div class="header-slideshow">
