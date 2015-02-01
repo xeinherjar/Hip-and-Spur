@@ -68,3 +68,26 @@ setInterval( function() {
 
 
 
+/*
+// Daily Special
+var ds_endpoint = 'http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/menu/special'
+var special;
+$.getJSON(ds_endpoint, function(data) {
+  var id = data.menu_item_id;
+  _.each(menu, function(items) { // menu => ss.js
+    _.map(items, function(item) {
+      if (item.id === id) {
+        special = item;
+        return;
+      }
+    })
+  })
+
+  // Update Daily Special HTML Block
+  $('.daily-special').append(special.description.toString());
+});
+*/
+
+
+
+
