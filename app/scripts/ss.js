@@ -84,34 +84,8 @@ $('.reserve-tab').on('click', function(){
 	$('.reserve-content').addClass('reserve-active');
 	$('.menu-content').addClass('menu-hidden');
 	$('.story-content').removeClass('story-active');
+	$('.location-content').removeClass('location-active');s
 
 });
-// //Daily Specials
 
-// $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu/special')
-// 	.done(function(data){
-// 		specials = data;
-// 		specItem = specials.menu_item_id;
-// 		menuSp = $.getJSON('http://private-anon-e6abf6810-restaurantapi.apiary-mock.com/menu')
-// 			.done(function(data){
-// 			menu = data;
-// 			entrees = menu.entrees;
-// 			sides = menu.sides;
-// 			app = menu.appetizers;
-			
-// 				var dailySpecials = $('.daily-special')
-
-// 				_.each(entrees, function(special){
-// 				if(specItem === entrees.id){
-// 					dailySpecials.append(special.item)
-// 					console.log(special.item)
-// 					}
-// 			})
-
-// 	});
-	
-
-// }) .fail( function (){
-// 	console.log('Fail')
-// });
 
