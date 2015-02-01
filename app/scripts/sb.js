@@ -3,31 +3,31 @@ var latest = 'http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/l
 
 
 $.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (a) {
-			console.log(a);
+			// console.log(a);
 		});
 		
 $.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (latestTitle) {
-			console.log(latestTitle.title);
+			// console.log(latestTitle.title);
 			
 		});
 
 
 
 $.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (latestPost) {
-			console.log(latestPost.post);
+			// console.log(latestPost.post);
 		});
 
 
 $.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (newsText) {
 		$.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (latestTitle) {
-			console.log(latestTitle.title);
+			// console.log(latestTitle.title);
 			})
 		
 		$.getJSON('http://private-anon-06e306242-restaurantapi.apiary-mock.com/news/latest').done(function (latestPost) {
-			console.log(latestPost.post);
+			// console.log(latestPost.post);
 			})
 	
-	console.log (newsText);
+	// console.log (newsText);
 		});
 
 
