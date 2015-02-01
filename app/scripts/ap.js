@@ -89,5 +89,21 @@ $.getJSON(ds_endpoint, function(data) {
 */
 
 
-
-
+var res_ep = "http://tiy-atl-fe-server.herokuapp.com/collections/hipandstir"; 
+$('#sub').click( function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: res_ep,
+    type: 'post',
+    dataType: 'json',
+    data: $('#reservation-form').serialize(),
+    success: function(data) {
+ 
+      // Remove form and update html
+      var reserve_content = $('.reserve-content');
+      var reserve_template = $('#reserve-template').html().trim();
+      var r_template_function = _.template(reserve_template);
+      reserve_content.html(r_template_function(data));
+    }
+  });
+});
