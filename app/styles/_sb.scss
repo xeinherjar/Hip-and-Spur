@@ -1,6 +1,19 @@
+.location-content h5{
+    margin-top: -11px;
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.story-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin-top: 40px;
+}
 .tabs{
     border-bottom: none;
-    margin-left: none;
+    margin-left: -40px;
 
 }
 .tabs li a {
@@ -14,54 +27,46 @@
 
 
 .menu-content{
-	background-color: white;
-	color: gray;
-		h1{
-            color: HSLA(185, 100%, 23%, 1);
+    background-color: white;
+    color: black;
+    h1{
+        color: HSLA(185, 100%, 23%, 1);
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        margin-bottom: 10px;
+        display: inline-block;
+        margin-top: 0px;
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        padding-left: 8px;
+        letter-spacing: 5px;
+        height: 100%;
+        width: 100%;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        }
+        h2{
             font-family: 'Lato', sans-serif;
-            font-size: 25px;
-            margin-bottom: 10px;
-            display: inline-block;
-            margin-top: 0px;
-            border-bottom: 1px solid lightgray;
-            border-left: 1px solid lightgray;
-            padding-left: 8px;
-            letter-spacing: 5px;
-            height: 100%;
-            width: 100%;
-            font-weight: 900;
-            text-transform: uppercase;
-            padding-bottom: 2px;
-
-		}
-		h2{
-            font-family: 'Lato', sans-serif;
-            font-size: 21px;
-            color: gray;
-            font-weight: bold;
             font-style: oblique;
-            letter-spacing: 1px;
-            border-bottom: none;
             text-decoration: underline;
-    
-		}
-	 ul.item {
+            border-bottom: none;
+            letter-spacing: 2px;
+            color: gray;
+
+        }
+     ul.item {
             max-width: 50em;
-            padding: 0;
             display: block;
+            padding: 0;
             overflow-x: hidden;
             list-style: none;
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: bold;
             margin-bottom: 0px;
-            color: black;
+            line-height: 15px;
         }
         ul.item li:after {
-            line-height: 24px;
             float: left;
             width: 0;
-            color: black;
             white-space: nowrap;
             content: ". . . . . . . . . . . . . . . . . . . . "
                      ". . . . . . . . . . . . . . . . . . . . "
@@ -69,73 +74,81 @@
                      ". . . . . . . . . . . . . . . . . . . . "
         }
         ul.item span:first-child {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
             padding-right: 0.33em;
             background: white;
-			font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         ul.item span + span {
+            font-family: 'Lato', sans-serif;
             float: right;
+            font-weight: 900;
             padding-left: 0.33em;
             background: white;
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
         .seperator:after {
             content: "" !important;
         }
-		.description{
-			width: 79%;
-			font-size: .74rem;
+        .description{
             font-family: 'Lato', sans-serif;
             font-weight: normal;
-		}
-		.buttons{
-			float: right;
-				span{
-					border-left: 1px solid gray;
-					padding-left: 8px;
-				}
-				span:first-child{
-					border: none;
-					padding: 5px;
-				}
-                :hover{
+            width: 85%;
+            font-size: .80rem;
+        }
+        .buttons{
+            padding-top: 5px;
+            text-align: right;
+                span{
+                    font-family: 'Lato', sans-serif;
+                    border-left: 1px solid gray;
+                    padding-left: 8px;
+                }
+                span:first-child{
+                    border: none;
+                    padding: 5px;
+                }
+            :hover{
                 cursor: default;
-		}
-}
-    .alg-active{
+            }
+        }
+
+
+    .alg{
         color: orange;
         position: relative;
         :hover{
             cursor: pointer;
         }
     }
-    .fav-active{
+    .fav{
         color: yellow;
     }
-    .spicy-active{
+    .spicy{
         color: red;
     }
-    .veg-active{
+    .veg{
         color: green;
     }
     .buttons span span{
         background:#F8F8F8;
-    border: 1px solid #DFDFDF;
-    border-radius: 3px;
-    color: #717171;
-    font-size: 13px;
-    height: 30px;
-    letter-spacing: 1px;
-    line-height: 20px;
-    position: absolute;
-    text-align: center;
-    top: -60px;
-    left: 10%;
-    display:none;
-    padding:0 20px;
-    width: 400px;
-    height: auto;
+        border: 1px solid #DFDFDF;
+        border-radius: 3px;
+        color: #717171;
+        font-size: 13px;
+        height: 30px;
+        letter-spacing: 1px;
+        line-height: 17px;
+        position: absolute;
+        text-align: center;
+        top: -60px;
+        left: 10%;
+        display: none;
+        padding:0 20px;
+        width: 400px;
+        height: auto;
     }
     
    .buttons span{
@@ -161,6 +174,7 @@
     margin-bottom: 5px;
     color: HSLA(185, 100%, 23%, 1);
     font-family: 'Lato', sans-serif;
+    margin-top: 35px;
   }
 
   input[type="text"], input[type="date"] {
@@ -194,6 +208,7 @@
 
 .location-content h3 {
     font-family: 'Lato', sans-serif;
+    margin-top: 35px;
     font-weight: 900;
     font-size: 20px;
     margin-bottom: 10px;
