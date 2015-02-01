@@ -10,6 +10,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     margin-top: 40px;
+       border-bottom: none;
 }
 .tabs{
     border-bottom: none;
@@ -24,7 +25,6 @@
     margin-right: 6px;
     margin-bottom: 30px;
     }
-
 
 .menu-content{
     background-color: white;
@@ -47,15 +47,16 @@
         padding-bottom: 2px;
         }
         h2{
+            border-bottom: none;
+            color: gray;
             font-family: 'Lato', sans-serif;
             font-style: oblique;
             text-decoration: underline;
-            border-bottom: none;
             letter-spacing: 2px;
-            color: gray;
 
         }
      ul.item {
+            color: black;
             max-width: 50em;
             display: block;
             padding: 0;
