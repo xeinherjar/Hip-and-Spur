@@ -28,12 +28,20 @@
 
   button {
     padding: 5px 8px;
+    display: block;
     border-radius: 3px;
     border: 1px solid lightgray;
     color: white;
     background-color: RGB(11, 93, 102);
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .reserve-post {
+    margin-top: 25px;
+    span {
+      color: RGB(11, 93, 102);
+    }
   }
 }
 

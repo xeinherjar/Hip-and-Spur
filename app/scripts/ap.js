@@ -68,3 +68,42 @@ setInterval( function() {
 
 
 
+/*
+// Daily Special
+var ds_endpoint = 'http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/menu/special'
+var special;
+$.getJSON(ds_endpoint, function(data) {
+  var id = data.menu_item_id;
+  _.each(menu, function(items) { // menu => ss.js
+    _.map(items, function(item) {
+      if (item.id === id) {
+        special = item;
+        return;
+      }
+    })
+  })
+
+  // Update Daily Special HTML Block
+  $('.daily-special').append(special.description.toString());
+});
+*/
+
+
+var res_ep = "http://tiy-atl-fe-server.herokuapp.com/collections/hipandstir"; 
+$('#sub').click( function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: res_ep,
+    type: 'post',
+    dataType: 'json',
+    data: $('#reservation-form').serialize(),
+    success: function(data) {
+ 
+      // Remove form and update html
+      var reserve_content = $('.reserve-content');
+      var reserve_template = $('#reserve-template').html().trim();
+      var r_template_function = _.template(reserve_template);
+      reserve_content.html(r_template_function(data));
+    }
+  });
+});
