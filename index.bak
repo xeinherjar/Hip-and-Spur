@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1, minimal-ui" name=
+    "viewport">
+    <title>
+      Hip and Stir
+    </title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link href="../bower_components/normalize-css/normalize.css" rel=
+    "stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.css" rel=
+    "stylesheet"><!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100'
+    rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel=
+    'stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel=
+    'stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,900italic'
+    rel='stylesheet' type='text/css'>
+    <link href="styles/main.css" rel="stylesheet"><!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+
+    <script src="../bower_components/modernizr/modernizr.js"></script><!-- endbuild -->
+  </head>
+  <body>
+  <div class="header-container">
+    <header>
+      <div class="header-logo"> 
+        <span class="icon-main"><i class="fa fa-caret-down fa-5x"></i> </span>
+        <span class="icon-sec"><i class="fa fa-minus fa-1x"></i> </span>
+        <h1>Hip <span class="and">&</span> Stir</h1> 
+        <h2>Decatur's swanky spot for good libations</h2>
+      </div>
+      <div class="social-media">
+             <li>Find us on ...</li>
+        <a href="http://www.facebook.com"> <i class="fa fa-facebook-official"></i> </a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i> </a>
+        <a href="http://www.twitter.com"> <i class="fa fa-twitter"></i></a>
+        <a href="http://www.pinterest.com"> <i class="fa fa-pinterest"></i> </a>
+  
+      </div>
+     
+    </header>
+  </div> <!-- header-container -->
+<<<<<<< HEAD
+
+  <div class="outer-container">
+    <div class="news-container">
+      <div class="news">
+
+
+
+
+
+    <script type="text/template" id="news-template">
+      <div>
+      <h4> Latest Headlines <span class="newsdate">Feb. 1 </h4>
+      <li>{{ title }}</li>
+      <p>{{ post }}</p>
+      <li{{ "Date here" }}</li>
+      </div>
+    </script>
+
+
+    </div> <!-- news -->
+
+      <div class="daily-special">
+      </div>
+    </div> <!-- news-container -->
+
+    <div class="header-slideshow">
+      <img src="images/header-01.jpg" class="slide-img"/>
+      <img src="images/header-02.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-03.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-04.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-05.jpg" class="slide-img slide-img-hide"/>
+    </div> <!-- header-slideshow -->
+
+    <main>
+      <div class="tabs">
+        <div class="story">
+          
+        </div>
+        <div class="menu">
+          
+        </div>
+        <div class="reserve">
+          
+        </div>
+        <div class="location">
+          
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="story-content">
+          
+        </div>
+        <div class="menu-content">
+          <h1> Our Hipster Dinner Menu ... </h1>
+          <div class="appetizers">
+          <h2>Appetizers</h2>
+          
+          </div>
+          <div class="entrees">
+          <h2>Entrees</h2>
+            
+=======
+    <div class="container">
+      <div class="outer-container">
+        <div class="news-container">
+          <div class="news">
+            <script id="news-template" type="text/template">
+            <div>
+            <h4> Latest News <span class="newsdate">Feb. 1 </h4>
+            <li>{{ title }}</li>
+            <p>{{ post }}</p>
+            <li{{ "Date here" }}</li>
+            </div>
+            </script>
+          </div><!-- news -->
+          <div class="daily-special">
+            <h4>daily specials</h4>
+>>>>>>> staging
+          </div>
+        </div><!-- news-container -->
+        <div class="header-slideshow">
+          <img class="slide-img" src="images/header-01.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-02.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-03.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-04.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-05.jpg">
+        </div><!-- header-slideshow -->
+        <main>
+          <div class="tabs">
+            <ul class="nav nav-pills">
+              <li class="story-tab">
+                <a data-toggle="tab" href="#pane1">Our Story</a>
+              </li>
+              <li class="menu-tab">
+                <a data-toggle="tab" href="#pane2">Our Menu</a>
+              </li>
+              <li class="location-tab">
+                <a data-toggle="tab" href="#pane3">Location</a>
+              </li>
+              <li class="reserve-tab">
+                <a data-toggle="tab" href="#pane4">Reservations</a>
+              </li>
+            </ul>
+          </div> <!-- tabs -->
+            <div class="menu">
+            </div>
+            <div class="reserve">
+              
+            </div>
+            <div class="location">
+              
+            </div>
+
+            <div class="libations">
+                  <h4>
+                    libations
+                  </h4>
+                   <p>
+                    we craft custom brewed vegan beer with
+                    locally sourced hops
+                  </p>
+            </div>
+          <div class="tab-content">
+            <div class="story-content">
+              <p>
+                Our founder had a vision 15 years ago when we
+                started off in their basement. We've evolved
+                from the pop up kitchen to our new space in
+                Decatur. Our passion is food, serving vegan and
+                artisnal craft beer.
+              </p>
+              </div>
+            </div>
+            <div class="menu-content">
+              <h1>
+                Our Hipster Dinner Menu ...
+              </h1>
+              <div class="appetizers">
+                <h2>
+                  Appetizers
+                </h2>
+              </div>
+              <div class="entrees">
+                <h2>
+                  Entrees
+                </h2>
+              </div>
+              <div class="sides">
+                <h2>
+                  Sides
+                </h2>
+              </div>
+            </div> <!-- menu-content -->
+            <div class="reserve-content">
+              <ul>
+                <li>
+                  <h3>
+                    Your Name
+                  </h3><input placeholder="Phillip J. Fry"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Email Address
+                  </h3><input placeholder="pjfry@gmail.com"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Phone Number
+                  </h3><input placeholder="404-256-0016"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Date of Reservation
+                  </h3><input type="date">
+                </li>
+                <li>
+                  <textarea cols="30" id="" name=
+                  "Special Notes" placeholder=
+                  "Special Occassion...?" rows="10">
+</textarea>
+                </li>
+                <li style="list-style: none">
+                  <button>Submit</button>
+                </li>
+              </ul>
+            </div> <!--reserve-content-->
+            <div class="location-content">
+              <h3>
+                Conveniently located in Downtown Decatur!
+              </h3><iframe frameborder="0" height="400" src=
+              "https://www.google.com/maps/embed/v1/place?q=125%20East%20Court%20Square%2C%20Decatur%2C%20GA%2030030%2C%20United%20States&key=AIzaSyDmo8f7b7W699zgbIb20BLKXijiSJUnO4g"
+              style="border:0" width="400"></iframe>
+            </div>
+        </main>
+        <aside></aside>
+      </div><!-- outer-container -->
+  <div class="footer-container">
+    <footer>
+      <li>Hip & Stir 
+        <span class="foottagline"> Decatur's swanky spot for good libations</span> 
+        <span class="footaddress">
+        125 Court Square  |  Decatur, GA  30030  |  404-123-4567  Questions or comments? Email us at hip&stir.com</span>
+      </li>
+    </footer>
+  </div> <!-- footer-container -->
+
+
+  <!-- Scripts -->
+
+  <!-- Entree Menu -->
+  <script type="text/template" id="menuTemp">
+        <ul class="item">
+          <li>
+            <span>{{ item }} </span>
+            <span> {{ price }} </span>
+          </li>
+        </ul>
+        <div class="description"
+          <p> {{ description }} </p>
+        </div>
+         <div class="buttons">
+          <span class="alg
+          <% if (allergies === 1) { %> 
+            alg-active 
+            <% }; %>
+            "> 
+            <i class="fa fa-exclamation "></i>
+            <span class="alg-note"> This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.
+            </span>
+          </span>
+          <span class="fav
+          <% if (favorite === 1) { %>
+            fav-active
+            <% }; %> 
+            "> 
+            <i class="fa fa-star"></i>
+            <span> We have been doing this a long time and this item has become one of our favorites.
+            </span>
+          </span>
+          <span class="spicy
+          <% if (spicy === 1) { %>
+            spicy-active
+            <% }; %>
+            ">
+            <i class="fa fa-fire-extinguisher"></i>
+            <span> This item is spicy, please handle with care and drink lots of water.
+            </span>
+          </span>
+          <span class="veg
+          <% if (vegan === 1) { %>
+            vegan-active
+            <% }; %>
+            ">
+            <i class="fa fa-leaf"></i>
+            <span> This item contains no meat and has been prepared without the use of animal products.
+            </span>
+          </span>
+        </div>
+        
+  </script> <!-- Entress Script -->
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+      </script> <!-- Entress Script -->
+       <!-- build:js scripts/vendor.js -->
+       <!-- bower:js -->
+       <script src="../bower_components/jquery/dist/jquery.js"></script> <script src="../bower_components/underscore/underscore.js"></script> <script src="../bower_components/lodash/lodash.js"></script> <!-- endbower -->
+       <!-- endbuild -->
+       <!-- build:js scripts/main.js -->
+       <script src="scripts/ss.js"></script> <script src="scripts/sb.js"></script> <script src="scripts/auth.js"></script> <script src="scripts/ap.js"></script> <script src="scripts/main.js"></script> <!-- endbuild -->
+    </div>
+  </body>
+</html>
