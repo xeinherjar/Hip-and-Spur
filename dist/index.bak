@@ -13,18 +13,11 @@
     <!-- bower:css -->
     <link href="../bower_components/normalize-css/normalize.css" rel=
     "stylesheet">
-    <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <!-- endbower -->
+    <link href="../bower_components/font-awesome/css/font-awesome.css" rel=
+    "stylesheet"><!-- endbower -->
     <!-- endbuild -->
-    
     <!-- build:css styles/main.css -->
     <link href="styles/main.css" rel="stylesheet">
-    <!-- endbuild -->
-   
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-   
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100'
     rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:900' rel=
@@ -33,31 +26,94 @@
     'stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,900italic'
     rel='stylesheet' type='text/css'>
+    <link href="styles/main.css" rel="stylesheet"><!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
 
+    <script src="../bower_components/modernizr/modernizr.js"></script><!-- endbuild -->
   </head>
-  
   <body>
   <div class="header-container">
     <header>
-      
       <div class="header-logo"> 
         <span class="icon-main"><i class="fa fa-caret-down fa-5x"></i> </span>
         <span class="icon-sec"><i class="fa fa-minus fa-1x"></i> </span>
         <h1>Hip <span class="and">&</span> Stir</h1> 
         <h2>Decatur's swanky spot for good libations</h2>
       </div>
-      
       <div class="social-media">
-        <li>Find us on ...</li>
+             <li>Find us on ...</li>
         <a href="http://www.facebook.com"> <i class="fa fa-facebook-official"></i> </a>
         <a href="http://www.instagram.com"><i class="fa fa-instagram"></i> </a>
         <a href="http://www.twitter.com"> <i class="fa fa-twitter"></i></a>
         <a href="http://www.pinterest.com"> <i class="fa fa-pinterest"></i> </a>
+  
       </div>
      
     </header>
-  
   </div> <!-- header-container -->
+<<<<<<< HEAD
+
+  <div class="outer-container">
+    <div class="news-container">
+      <div class="news">
+
+
+
+
+
+    <script type="text/template" id="news-template">
+      <div>
+      <h4> Latest Headlines <span class="newsdate">Feb. 1 </h4>
+      <li>{{ title }}</li>
+      <p>{{ post }}</p>
+      <li{{ "Date here" }}</li>
+      </div>
+    </script>
+
+
+    </div> <!-- news -->
+
+      <div class="daily-special">
+      </div>
+    </div> <!-- news-container -->
+
+    <div class="header-slideshow">
+      <img src="images/header-01.jpg" class="slide-img"/>
+      <img src="images/header-02.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-03.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-04.jpg" class="slide-img slide-img-hide"/>
+      <img src="images/header-05.jpg" class="slide-img slide-img-hide"/>
+    </div> <!-- header-slideshow -->
+
+    <main>
+      <div class="tabs">
+        <div class="story">
+          
+        </div>
+        <div class="menu">
+          
+        </div>
+        <div class="reserve">
+          
+        </div>
+        <div class="location">
+          
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="story-content">
+          
+        </div>
+        <div class="menu-content">
+          <h1> Our Hipster Dinner Menu ... </h1>
+          <div class="appetizers">
+          <h2>Appetizers</h2>
+          
+          </div>
+          <div class="entrees">
+          <h2>Entrees</h2>
+            
+=======
     <div class="container">
       <div class="outer-container">
         <div class="news-container">
@@ -71,20 +127,20 @@
             </div>
             </script>
           </div><!-- news -->
-          
           <div class="daily-special">
             <h4>daily specials</h4>
+>>>>>>> staging
           </div>
         </div><!-- news-container -->
-        
         <div class="header-slideshow">
           <img class="slide-img" src="images/header-01.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-02.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-03.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-04.jpg">
-          <img class="slide-img slide-img-hide" src="images/header-05.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-02.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-03.jpg">
+          <img class="slide-img slide-img-hide" src=
+          "images/header-04.jpg"> <img class=
+          "slide-img slide-img-hide" src="images/header-05.jpg">
         </div><!-- header-slideshow -->
-        
         <main>
           <div class="tabs">
             <ul class="nav nav-pills">
@@ -122,86 +178,91 @@
             </div>
           <div class="tab-content">
             <div class="story-content">
-              <p> <span class="firstcharacter">N</span> 
-                early 15 years ago, our founder, Hank “Hip” Jones, discovered his passion. From his basement in Decatur, Hip entertained neighbors and friends, stirring flavorful alcoholic concoctions and preparing delicious meat and vegetarian dishes. Hip so enjoyed hosting these gatherings every week, he decided to bring his bartending and culinary prowess to the masses. 
-</p>
-<p>
-In 2005, he opened his first pop-up restaurant on the outskirts of Decatur. Each night, folks from across metro Atlanta packed Hip’s place, ordering everything from Prosciutto to Paprika Cured Pork Loin. But it wasn’t just the food that was a hit. Hip’s drinks, from the classic Tango Martini Cocktail to his famous Mint Martini, delighted faithful patrons — while fetching thousands of dollars in revenue. 
-</p>
-<p>
-Word of Hip’s pop-up spread, and soon his location was too small for the burgeoning crowd of 20-, 30-, and 40-somethings. In March 2013, Hip leased a 20,000-square-foot space on Decatur’s East Court Square. Hip hired an eager crew of chefs, waiters, and bartenders, even luring employees away from perennial iconic restaurants such as Rathbun’s and Sundial. Then he expanded his menu, serving up seafood bisque and hog chops, for instance, and he stocked his bar with artisanal craft beers and other drink favorites.
-</p>
-<p>
-Hip & Stir was born -- to rave reviews. 
-</p>
-<p>
-In October 2013, Atlanta Journal-Constitution food critic John Kessler wrote that Hip & Stir “is a breath of fresh air in a sea of culinary sameness.” Patrons often remark that although Hip & Stir is an upscale food-and-drink venue, its appeal lies in the fact that it lacks the pomp and pretentiousness of restaurant competitors in Midtown, Virginia-Highland and Buckhead.
-</p>
-<p>
-Could we see more Hip & Stir locations in the future? 
-</p>
-<p>
-“Perhaps,” says Hip, “but for right now, I’m just focused on making this location the swankiest spot for good food and good libations in Decatur.” 
-
+              <p>
+                Our founder had a vision 15 years ago when we
+                started off in their basement. We've evolved
+                from the pop up kitchen to our new space in
+                Decatur. Our passion is food, serving vegan and
+                artisnal craft beer.
               </p>
-            </div>
-         </div>
-          
-          <div class="menu-content">
-            <h1>Our Hipster Dinner Menu ...</h1>
-            <div class="appetizers">
-              <h2>Appetizers</h2>
-            </div>
-            <div class="entrees">
-              <h2>Entrees</h2>
-            </div>
-            <div class="sides">
-              <h2>Sides</h2>
-            </div>
-          </div> <!-- menu-content -->
-          <div class="reserve-content">
-            <form action="http://tiy-atl-fe-server.herokuapp.com/collections/hipandstir" method="post" id="reservation-form">
-                <h3>Your Name</h3>
-                <input placeholder="Phillip J. Fry" type="text" name="name">
-                <h3>Email Address</h3>
-                <input placeholder="pjfry@gmail.com" type="text" name="email">
-                <h3>Phone Number</h3>
-                <input placeholder="404-256-0016" type="text" name="phone">
-                <h3>Date of Reservation</h3>
-                <input type="date" name="date">
-                <textarea name="notes" placeholder="Special Occassion...?" rows="10"></textarea>
-                <button id="sub">Reserve</button>
-            </form>
-
-            <script type="lodash/template" id="reserve-template">
-              <div class="reserve-post">
-              Thank you <span>{{name}}</span> for your reservation.
-              We will see you on <span>{{date}}</span>.
-              If anything changes please contact us.  
-              We will call you at <span>{{phone}}</span> 
-              the day before your reservation to confirm.  Thanks!
               </div>
-            </script>
+            </div>
+            <div class="menu-content">
+              <h1>
+                Our Hipster Dinner Menu ...
+              </h1>
+              <div class="appetizers">
+                <h2>
+                  Appetizers
+                </h2>
+              </div>
+              <div class="entrees">
+                <h2>
+                  Entrees
+                </h2>
+              </div>
+              <div class="sides">
+                <h2>
+                  Sides
+                </h2>
+              </div>
+            </div> <!-- menu-content -->
+            <div class="reserve-content">
+              <ul>
+                <li>
+                  <h3>
+                    Your Name
+                  </h3><input placeholder="Phillip J. Fry"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Email Address
+                  </h3><input placeholder="pjfry@gmail.com"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Phone Number
+                  </h3><input placeholder="404-256-0016"
+                  type="text">
+                </li>
+                <li>
+                  <h3>
+                    Date of Reservation
+                  </h3><input type="date">
+                </li>
+                <li>
+                  <textarea cols="30" id="" name=
+                  "Special Notes" placeholder=
+                  "Special Occassion...?" rows="10">
+</textarea>
+                </li>
+                <li style="list-style: none">
+                  <button>Submit</button>
+                </li>
+              </ul>
             </div> <!--reserve-content-->
-            
             <div class="location-content">
-              <h3>Conveniently located in Downtown Decatur!</h3>
-              <h5>For reservations or questions, call 404-123-4567.</h5>
-                <embed width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=126%20East%20Court%20Square%2C%20Decatur%2C%20GA%2030030&key=AIzaSyB_kkQKKYfMYX_7QFeknwaoVpwE39qAby8"></embed>
+              <h3>
+                Conveniently located in Downtown Decatur!
+              </h3><iframe frameborder="0" height="400" src=
+              "https://www.google.com/maps/embed/v1/place?q=125%20East%20Court%20Square%2C%20Decatur%2C%20GA%2030030%2C%20United%20States&key=AIzaSyDmo8f7b7W699zgbIb20BLKXijiSJUnO4g"
+              style="border:0" width="400"></iframe>
             </div>
         </main>
-        <aside> Hip & Stir on Instagram </aside>
+        <aside></aside>
       </div><!-- outer-container -->
-  
   <div class="footer-container">
     <footer>
       <li>Hip & Stir 
-        <span class="foottagline">Decatur's swanky spot for good libations</span> 
+        <span class="foottagline"> Decatur's swanky spot for good libations</span> 
         <span class="footaddress">
         125 Court Square  |  Decatur, GA  30030  |  404-123-4567  Questions or comments? Email us at hip&stir.com</span>
       </li>
     </footer>
   </div> <!-- footer-container -->
+
 
   <!-- Scripts -->
 
